@@ -18,32 +18,104 @@
     </header>
     <main>
       <section class="card" id="html-section">
-        <h2>HTML</h2>
+        <h2 class="card-headings">HTML</h2>
+        <section class="notes">
+        <p id="html-note">Press F12 to view the html code for this page</p>
+        </br>
         <ul>
-          <li>You should declare the html document at the top with <<q>!DOCTYPE_html</q>></li>
+          <li>Basic HTML Format:</li>
+          <ul>
+            <li>Declerations like document type</li>
+            <li>HTML = Where all of the code will go and should also set the language here for search engine optimization and accessibility</li>
+            <ul>
+              <li>Head = Page data not rendered for user</li>
+              <ul>
+                <li>Metadata</li>
+                <li>Links to external resources and scripts</li>
+                <li>Title for webpage, important for accessibility and search engine optimization</li>
+              </ul>
+              <li>Body = All user visible content</li>
+              <ul>
+                <li>Header</li>
+                <li>Main</li>
+                <li>Footer</li>
+              </ul>
+            </ul>
+          </ul>
+
+          <li>To create comments in HTML you need to use <<!---->!-- Comments in here --></li>
+          <li>You should declare the html document at the top with <<!---->!DOCTYPE_html></li>
           <li>The head element contains information and metadata about the webpage, and is not normally visible to users.</li>
-          <li>The head may contain meta tags as well as <<q>title</q>>, <<q>style</q>>, <<q>base</q>>, <<q>link</q>>, <<q>script</q>>, etc.</li>
+          <li>The head may contain <<!---->meta> tags as well as <<!---->title>, <<!---->base>, <<!---->link>, <<!---->script>, etc.</li>
+          <li>To link to a .css style sheet use <<!---->link rel="stylesheet" href="directory or URL here" /></br>
+            &ensp;a directory of a file in a folder relative to where the html document is may look like "./assets/style.css"</li>
           <li>The body element represents the content the user will be shown.</li>
-          <li>Inside the body element are usually a header <<q>h#</q>> <<q>/h#</q>> where # can be 1-6 and should be only nested in order. This is important for accessibility in screen readers and SEO (search engine optimization)</li>
-          <li>You can uniquely identify elements, like headers, ex. <<q>header id="name"</q>></li>
-          <li>As a side note, you can show html element formats in text form by showing the <, element name, and > putting a <<q>q</q>> before the element name and <<q>/q</q>> after it inside the <> brackets without the quotation marks</li>
+          <li>Inside the body element are usually a headings <<!---->h#> <<!---->/h#> where # can be 1-6 and should be only nested in order. This is important for accessibility in screen readers and SEO (search engine optimization)</li>
+          <li>You can uniquely identify elements, like paragraphs, ex. <<!---->p id="name">, but each element id must be unique</li>
+          <li>You can also create a class which can apply to multiple elements, ex. <<!---->p class="name"<!---->>, then add class="name" to another element to apply a style to all at once in CSS</li>
+          <li>To create spacing you can add these character</li>
+          <ul>
+            <li>&<!---->nbsp; = |&nbsp;|</li>
+            <li>&<!---->ensp; = |&ensp;|</li>
+            <li>&<!---->emsp; = |&emsp;|</li>
+          </ul>
+          <li>You can show html code formats in text form by interrupting it with a comment inline  or showing the <, text, and > putting a <<q>q</q>> before the element name and <<q>/q</q>> after it inside the <> brackets without the quotation marks</li>
         </ul>
+        </section>
+        <h3 class="vocab">Vocabulary</h3>
       </section>
    
       <section class="card" id="css-section">
-        <h2>CSS</h2>
+        <h2 class="card-headings">CSS</h2>
+        <section class="notes">
+        <ul>
+        </br>
+          <li>Usually using inline styles is not good, creating a seperate .css style sheet is good practice</li>
+          <li>Creating global values can be done inside of * {} bracket</li>
+          <li>You can creat comments in CSS with /* Comments in here */</li>
+          <li>To apply styling to multiple elements, classes, ids, or items use commas to separate them before the opening bracket like this,</br>
+            &emsp;h1, .classname, #idname {</br>
+            &emsp;}</li>
+        </ul>
+        </section>
+        <h3 class="vocab">Vocabulary</h3>
       </section>
    
       <section class="card" id="git-section">
-        <h2>Git</h2>
+        <h2 class="card-headings">Git</h2>
+        <section class="notes">
         <ul>
+        </br>
+          <li>GIT FLOW: (in GitBash or other console use command inside of parenthesis at given step)</li>
+          **USE (git pull origin main) OFTEN, AT LEAST DAILY WHEN WORKING ON REPOSITORY, main MAY BE ANOTHER BRANCH NAME LIKE MASTER**
+            <ol id="git-list">
+              <li>Clone the repository on GiHub (preferably using SSH cloning from the coding dropdown menu)</li>
+              <li>Open an issue for fixing a bug or adding feature on GitHub</li>
+              <li>Create a branch (-b) and move to it (checkout) to have a safe section to work in (git checkout -b branchtype/branchname)</li>
+              <li>Work on your code!</li> <!-- element 4 in git-list -->
+              <li>Stage for commit, to stage all changes use (git add -A)</li>
+              <li>Commit work and either continue work back to step 4 or move on to the next step (git commit -m "your commit message here")</li>
+              <li>If ready to prepare to push, first do a git pull to check version (git pull origin main)</li>
+              <li>Now push your code to GitHub (git push origin branchtype/branchname)</li>
+              <li>Create a pull request on GitHub and collaborate or fix any issues</li>
+              <li>If ready to merge then either merge on GitHub or first checkout to the </li>
+            </ol>
           <li>git status: checks what branch we are currently on</li>
           <li>git checkout -b branch-type/name: creates and switches to a new branch ex. "feature/menu-buttons"</li>
         </ul>
+        </section>
+        <h3 class="vocab">Vocabulary</h3>
       </section>
    
       <section class="card" id="javascript-section">
-        <h2>JavaScript</h2>
+        <h2 class="card-headings">JavaScript</h2>
+        <section class="notes">
+        <ul>
+        </br>
+          <li>Javascript notes</li>
+        </ul>
+        </section>
+        <h3 class="vocab">Vocabulary</h3>
       </section>
     </main>
 

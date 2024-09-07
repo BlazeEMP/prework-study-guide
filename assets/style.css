@@ -11,8 +11,7 @@ footer {
     color: white;
 }
 
-h1,
-h2 {
+h1, h2, h3 {
     text-align: center;
 }
 
@@ -24,19 +23,47 @@ img {
     margin-right: auto;
 } 
 
+ul, ol, #html-note {
+    font-size: 20px;
+}
+
+#html-note {
+    margin-top: 5px; /* adds space after the background on the sections heading so the text isn't touching it */
+}
+
 ul {
     padding-left: 40px;
-    font-size: 20px;
+}
+
+#git-list {
+    padding-left: 40px;
 }
 
 p {
     text-align: center;
-    font-size: 30px;
+    font-size: 30px; /* Note this won't effect #htmlnote even though it's a paragraph element since the id has higher priority */
+}
+
+.vocab {
+    padding: 5px;
+    margin: -5px;
+    background-color: rgba(134, 134, 134, 0.425);
+}
+
+.card-headings {
+    background-color: rgba(134, 134, 134, 0.425);
+    padding: 5px;
+    margin: -5px;
+}
+
+.notes {
+    padding-bottom: 10px;
 }
 
 .card {
     width: 80%;
     margin: 40px auto;
+    padding: 5px;
     border: 5px solid gray;
     box-shadow: 5px 10px #888888;
 }
