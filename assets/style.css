@@ -28,14 +28,14 @@ ul, ol, #html-note {
 }
 
 #html-note {
-    margin-top: 5px; /* adds space after the background on the sections heading so the text isn't touching it */
+    margin-bottom: 10px; /* adds space after the background on the sections heading so the text isn't touching it */
 }
 
 ul {
     padding-left: 40px;
 }
 
-#git-list {
+ol {
     padding-left: 40px;
 }
 
@@ -57,7 +57,12 @@ p {
 }
 
 .notes {
-    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.vocab-notes {
+     padding-top: 10px;
 }
 
 .card {
