@@ -85,7 +85,7 @@
               &emsp;&emsp;<<!---->li>List item<<!---->/li></br>
               &emsp;<<!---->/ol></br>
               <<!---->/li></li>
-            <li>You can show html code formats in text form by interrupting it with a comment inline with the code or showing the <, text, and > putting a <<q>q</q>> before the element name and <<q>/q</q>> after it inside the <> brackets without the quotation marks</li>
+            <li>You can show html code formats in text form by interrupting it with a comment inline with the code, right after the < or before the > bracket works well to still be as readable as possible</li>
           </ul>
         </section>
         <h3 class="vocab">Vocabulary</h3>
@@ -115,13 +115,15 @@
             <li>To apply styling to multiple elements, classes, ids, or items use commas to separate them before the opening bracket like this,</br>
               h1, .classname, #idname {</br>
               }</li>
+            <li>When assigning values to multiple elements as above, assigning a unique element id a value separately will take priority</li>
+            <li>The value of auto can be used to center elements easily and cope with many different display sizes</li>
             <li>When setting colors you can use mulitple methods, but check for accessibility and browser compatibility
               <ul>
-                <li>rgb() = *****************</li>
-                <li>hsl() = </li>
-                <li>hwb() = </li>
-                <li>color() = </li>
-                <li>hex-color = ***************</li>
+                <li>rgba(r g b / a) = is red, green, blue, and alpha color selection where rgb are (0-255) and alpha is transparency (0.0-1.0)</li>
+                <li>hsla(h s l / a) = is hue (0-360), saturation (0%-100%), lightness (0%-100%), and alpha (0.0-1.0)</li>
+                <li>hwba(h w b / a) = is hue (0-360), whiteness (0%-100%), blackness (0%-100%), and alpha (0.0-1.0)</li>
+                <li>#RRGGBBAA = is hex notation and can be denoted with three (#RGB), four (#RGBA), six (#RRGGBB), and eight (#RRGGBBAA) value hex notation of 00-ff, duplicate letters/numbers can take single space</li>
+                <li>color() = can be used to denote specific colorspaces to use to make a color, like srgb</li>
               </ul>
             </li>
           </ul>
@@ -149,12 +151,12 @@
           <ul>
             <li>Git is used to keep track of versions as you save changes, add features, and fix bugs. You can use it to revert to old versions and keep your live project or service safe from errant changes while modifying stuff in the background</li>
             <li>GIT FLOW: (in GitBash or other console use command inside of parenthesis at given step)</br>
-              &ensp;**USE (git pull origin main) OFTEN, AT LEAST DAILY WHEN WORKING ON REPOSITORY, main MAY BE ANOTHER BRANCH NAME LIKE MASTER**
+              &ensp;**USE (git pull origin main) OFTEN, AT LEAST DAILY WHEN WORKING ON REPOSITORY TO KEEP UPDATED, main MAY BE ANOTHER BRANCH NAME LIKE master**
               <ol>
-                <li>Clone the repository on GitHub (preferably using SSH cloning from the coding dropdown menu)</li>
+                <li>Clone the repository on GitHub, preferably using SSH cloning from the coding dropdown menu (git clone pasteURLhere)</li>
                 <li>Open an issue for fixing a bug or adding feature on GitHub</li>
                 <li>Create a branch (-b) and move to it (checkout) to have a safe section to work in (git checkout -b branchtype/branchname)</li>
-                <li>Work on your code!</li> <!-- element 4 in git-list -->
+                <li>Work on your code and commit often!</li> <!-- element 4 in git-list -->
                 <li>Stage for commit, to stage all changes use (git add -A)</li>
                 <li>Commit work and either continue work back to step 4 or move on to the next step (git commit -m "your commit message here")</li>
                 <li>If ready to prepare to push, first do a git pull to check version (git pull origin main)</li>
@@ -166,6 +168,7 @@
             </li>
             <li>git status: checks what branch we are currently on</li>
             <li>git remote -v: check the fetch and push address you have currently, can use before git pull or push to verify where you are directed</li>
+            <li>code .: can open Visual Code at current directory in the terminal, can also replace the . with a file directory where you want to work (ex. code e:bootcamp/prework-study-guide)</li>
           </ul>
         </section>
         <h3 class="vocab">Vocabulary</h3>
@@ -181,6 +184,8 @@
             <li>Commit - When you save changes in a branch that are logged in Git</li>
             <li>Pull Request - A submission to merge the commits made in a branch being worked on (feature branch) to the base branch, must be approved and notes or changes may be made at this point</li>
             <li>Merge/Merging - The process in which a feature branch with changes made is added back into, or merged, with the base branch it came from</li>
+            <li>Repository - The Git version of a directory that tracks commits and branch changes in the project</li>
+            <li>Clone - To copy a repository from Git or GitHub into a directory</li>
           </ul>
         </section>
       </section>
