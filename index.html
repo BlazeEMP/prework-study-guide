@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!–– how to comment in html file, visible to users in source code but not rendered anywhere ––>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -12,36 +14,196 @@
       <img 
         src="./assets/bowtie-cat.png"
         alt="Profile image of cat wearing a bow tie."
-        />
+      />
     </header>
     <main>
       <section class="card" id="html-section">
-        <h2>HTML</h2>
-        <ul>
-          <li>You should declare the html document at the top with <<q>!DOCTYPE_html</q>></li>
-          <li>The head element contains information and metadata about the webpage, and is not normally visible to users.</li>
-          <li>The head may contain meta tags as well as <<q>title</q>>, <<q>style</q>>, <<q>base</q>>, <<q>link</q>>, <<q>script</q>>, etc.</li>
-          <li>The body element represents the content the user will be shown.</li>
-          <li>Inside the body element are usually a header <<q>h#</q>> <<q>/h#</q>> where # can be 1-6 and should be only nested in order. This is important for accessibility in screen readers and SEO (search engine optimization)</li>
-          <li>You can uniquely identify elements, like headers, ex. <<q>header id="name"</q>></li>
-          <li>As a side note, you can show html element formats in text form by showing the <, element name, and > putting a <<q>q</q>> before the element name and <<q>/q</q>> after it inside the <> brackets without the quotation marks</li>
-        </ul>
+        <h2 class="card-headings">HTML</h2>
+        <section class="notes">
+          <p id="html-note">Press F12 to view the html code for this page</p>
+          <ul>
+            <li>Basic HTML Format:
+              <ol>
+                <li>Document type declaration for browser</li>
+                <li>HTML = Where all of the code will go and should also set the language here for search engine optimization and accessibility
+                  <ol>
+                    <li>Head = Page data not rendered for user
+                      <ul>
+                        <li>Metadata</li>
+                        <li>Links to external resources and scripts</li>
+                        <li>Title for webpage, important for accessibility and search engine optimization</li>
+                      </ul>
+                    </li>
+                    <li>Body = All user visible content
+                      <ol>
+                        <li>Header</li>
+                        <li>Main</li>
+                        <li>Footer</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+            <li>You can create notes in HTML with <<!---->!-- Comments in here --></li>
+            <li><<!---->!DOCTYPE_html> should declare the HTML document at the very first line on top</li>
+            <li><<!---->meta charset="UTF-8" /> is a character set containing pretty much all character for any language, recommended in regular use for HTML5</li>
+            <li>The head may contain <<!---->meta> tags like <<!---->charset> as well as <<!---->title> for the name of the webpage, <<!---->base> for defining a base URL, <<!---->link> to link to external resources, <<!---->script> for linking to scripts you want to use on the webpage, etc.</li>
+            <li><<!---->link rel="stylesheet" href="directory or URL here" /> is used to link to a .css style sheet</br>
+              &ensp;a directory of a file in a folder relative to where the html document is may look like "./assets/style.css"</li>
+            <li><<!---->h1>Heading Here<<!---->/h1> is used for headings, where #1 can be 1-6 and should be only nested in order. This is important for accessibility in screen readers and SEO (search engine optimization)</li>
+            <li><<!---->p id="name"> can be used to create an id for this individual element to apply styles in CSS, like a paragraph element here</li>
+            <li><<!---->p class="name"<!---->> can be used to set an element as a class, which can be used to identify multiple elements, add class="name" to another element to apply a style to all at once in CSS, the other elements wouldn't have to be paragraphs necessarily</li>
+            <li><<!---->a href="URL" target="#1-#4">text on screen<<!---->/a> can be used to create a hyperlink with text as the clickable element, where target can be...
+              <ol>
+                <li>_self = default target value, opens the link in the same window/tab as it was clicked</li>
+                <li>_blank = opens in a new window or tab</li>
+                <li>_parent = opens the doceument in the parent frame</li>
+                <li>_top = opens the document in the full body of the window</li>
+              </ol>
+            </li>
+            <li>To create an image hyperlink instead use the following, where #1-#4 are as above</br>
+              <<!---->a href="URL" target="#1-#4"></br>
+              &emsp;<<!---->img</br>
+              &emsp;&emsp;src="./assets/img.png" **OR** src="URLhere"</br>
+              &emsp;&emsp;alt="This images description"</br>
+              &emsp;&emsp;title="Will display when hovered over"</br>
+              &emsp;/><<!---->/a></li>
+            <li>To create spacing you can add these character
+              <ul>
+                <li>&<!---->nbsp; = |&nbsp;|</li>
+                <li>&<!---->ensp; = |&ensp;|</li>
+                <li>&<!---->emsp; = |&emsp;|</li>
+              </ul>
+            </li>
+            <li><<!---->ol>List<<!---->/ol> can be used to create an ordered list</li>
+            <li><<!---->ul>List<<!---->/ul> can be used to create an unordered list (bulleted list)</li>
+            <li><<!---->li>List item<<!---->/li> is how to insert a list element into an ordered or unordered list</li>
+            <li>Lists can be nested inside of each other to create subsections, you should nest a list inside of another list element</br>
+              <<!---->li></br>
+              &emsp;<<!---->ol></br>
+              &emsp;&emsp;<<!---->li>List item<<!---->/li></br>
+              &emsp;<<!---->/ol></br>
+              <<!---->/li></li>
+            <li>You can show html code formats in text form by interrupting it with a comment inline with the code, right after the < or before the > bracket works well to still be as readable as possible</li>
+          </ul>
+        </section>
+        <h3 class="vocab">Vocabulary</h3>
+        <section class="vocab-notes">
+          <ul>
+            <li>Head - Section containing data for the page that is not rendered for the user to see</li>
+            <li>Body - Main section of the html code, this is what's rendered to be shown to the user</li>
+            <li>Header - Top section of the page, where stuff at the very top of the page will be placed (ex. page banner or title like a company name)</li>
+            <li>Main - The majority section of the page where all of the main elements and content will go</li>
+            <li>Footer - Bottom section of the page, where stuff at the very bottom of the page will be placed (ex. copyright information, social media links, website section links like "contact us", "help", or other popular/important areas on the site)</li>
+            <li>Heading - An element on the webpage used to identify a section of content coming up, like the title for an individual chapter of a book</li>
+            <li>Hyperlink - A section of text or other element like an image, that when clicked directs you to a URL embedded in it</li>
+            <li>Title - Used to create the text that shows when hovering over an element or link and important to search engine optimization</li>
+            <li>SEO - Search engine optimization</li>
+            <li>Metadata - Different types of data the browser will use to get resources for how to display the page, always found inside the head</li>
+          </ul>
+        </section>
       </section>
    
       <section class="card" id="css-section">
-        <h2>CSS</h2>
+        <h2 class="card-headings">CSS</h2>
+        <section class="notes">
+          <ul>
+            <li>You can creat comments in CSS with /* Comments in here */</li>
+            <li>Usually using inline styles in HTML is not good, creating a seperate .css style sheet is good practice</li>
+            <li>Creating global values can be done inside of * {} bracket</li>
+            <li>To apply styling to multiple elements, classes, ids, or items use commas to separate them before the opening bracket like this,</br>
+              h1, .classname, #idname {</br>
+              }</li>
+            <li>When assigning values to multiple elements as above, assigning a unique element id a value separately will take priority</li>
+            <li>The value of auto can be used to center elements easily and cope with many different display sizes</li>
+            <li>When setting colors you can use mulitple methods, but check for accessibility and browser compatibility
+              <ul>
+                <li>rgba(r g b / a) = is red, green, blue, and alpha color selection where rgb are (0-255) and alpha is transparency (0.0-1.0)</li>
+                <li>hsla(h s l / a) = is hue (0-360), saturation (0%-100%), lightness (0%-100%), and alpha (0.0-1.0)</li>
+                <li>hwba(h w b / a) = is hue (0-360), whiteness (0%-100%), blackness (0%-100%), and alpha (0.0-1.0)</li>
+                <li>#RRGGBBAA = is hex notation and can be denoted with three (#RGB), four (#RGBA), six (#RRGGBB), and eight (#RRGGBBAA) value hex notation of 00-ff, duplicate letters/numbers can take single space</li>
+                <li>color() = can be used to denote specific colorspaces to use to make a color, like srgb</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <h3 class="vocab">Vocabulary</h3>
+        <section class="vocab-notes">
+          <ul>
+            <li>CSS - Cascading Style Sheets</li>
+            <li>Style Sheet - Either a section at the top of the .html doc or usually a separate .css doc containing all of the styling for a webpage</li>
+            <li>Styles - Parameters assigned to HTML elements to give them sizes, colors, spacing, margins, backgrounds and other visual or relative content changes/additions</li>
+            <li>Class - An identifier that can be used to access and change content in multiple elements at once</li>
+            <li>ID - An identifier that can be used to access and change content in an individual element and no more, this is unique and cannot be duplicated</li>
+            <li>Box Model - The way we can describe and visualize the space around every HTML element on a page, from inside to outside it consists of the content, padding, border, and margin</li>
+            <li>Content - The innermost area of each HTML element, what is actually visible and rendered for the user (excluding background colors etc.)</li>
+            <li>Padding - The area directly outside of the content inside of an HTML element</li>
+            <li>Border - The area separating the padding and margin</li>
+            <li>Margin - The outermost section of a HTML element, be careful of collapsing margins when separate elements margins are able to touch</li>
+          </ul>
+        </section>
       </section>
    
       <section class="card" id="git-section">
-        <h2>Git</h2>
-        <ul>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-type/name: creates and switches to a new branch ex. "feature/menu-buttons"</li>
-        </ul>
+        <h2 class="card-headings">Git</h2>
+        <section class="notes">
+          <ul>
+            <li>Git is used to keep track of versions as you save changes, add features, and fix bugs. You can use it to revert to old versions and keep your live project or service safe from errant changes while modifying stuff in the background</li>
+            <li>GIT FLOW: (in GitBash or other console use command inside of parenthesis at given step)</br>
+              &ensp;**USE (git pull origin main) OFTEN, AT LEAST DAILY WHEN WORKING ON REPOSITORY TO KEEP UPDATED, main MAY BE ANOTHER BRANCH NAME LIKE master**
+              <ol>
+                <li>Clone the repository on GitHub, preferably using SSH cloning from the coding dropdown menu (git clone pasteURLhere)</li>
+                <li>Open an issue for fixing a bug or adding feature on GitHub</li>
+                <li>Create a branch (-b) and move to it (checkout) to have a safe section to work in (git checkout -b branchtype/branchname)</li>
+                <li>Work on your code and commit often!</li> <!-- element 4 in git-list -->
+                <li>Stage for commit, to stage all changes use (git add -A)</li>
+                <li>Commit work and either continue work back to step 4 or move on to the next step (git commit -m "your commit message here")</li>
+                <li>If ready to prepare to push, first do a git pull to check version (git pull origin main)</li>
+                <li>Now push your code to GitHub (git push origin branchtype/branchname)</li>
+                <li>Create a pull request on GitHub and collaborate or fix any issues</li>
+                <li>If ready to merge then either merge on GitHub after pull request is approved or first (git checkout) to the base branch you want to merge into in your terminal and insert the comparison branch in "branchtype/branchname" when you use (git merge branchtype/branchname)</li>
+                <li>It's possible you may now want to delete the feature branch you were working in and move on to a new feature or bugfix branch</li>
+              </ol>
+            </li>
+            <li>git status: checks what branch we are currently on</li>
+            <li>git remote -v: check the fetch and push address you have currently, can use before git pull or push to verify where you are directed</li>
+            <li>code .: can open Visual Code at current directory in the terminal, can also replace the . with a file directory where you want to work (ex. code e:bootcamp/prework-study-guide)</li>
+          </ul>
+        </section>
+        <h3 class="vocab">Vocabulary</h3>
+        <section class="vocab-notes">
+          <ul>
+            <li>Git - A free open source version control tool that is installed locally on a computer</li>
+            <li>GitHub - A paid service to allow Git to run in the cloud connection multiple developers or computers</li>
+            <li>Default Branch - Is the primary branch of a project, usually called main or master</li>
+            <li>Feature Branch - Is the working branch where you will typically make changes before merging back higher up in the chain</li>
+            <li>Base Branch - The higher level branch you are merging into on a merge request</li>
+            <li>Comparison Branch - The branch you are merging back into the main code on a merge request</li>
+            <li>Staging - The process of lining up changes made to commit into Git</li>
+            <li>Commit - When you save changes in a branch that are logged in Git</li>
+            <li>Pull Request - A submission to merge the commits made in a branch being worked on (feature branch) to the base branch, must be approved and notes or changes may be made at this point</li>
+            <li>Merge/Merging - The process in which a feature branch with changes made is added back into, or merged, with the base branch it came from</li>
+            <li>Repository - The Git version of a directory that tracks commits and branch changes in the project</li>
+            <li>Clone - To copy a repository from Git or GitHub into a directory</li>
+          </ul>
+        </section>
       </section>
    
       <section class="card" id="javascript-section">
-        <h2>JavaScript</h2>
+        <h2 class="card-headings">JavaScript</h2>
+        <section class="notes">
+          <ul>
+            <li>Javascript notes</li>
+          </ul>
+        </section>
+        <h3 class="vocab">Vocabulary</h3>
+        <section class="vocab-notes">
+          <ul>
+            <li>JevaScript - An object-oriented programming language used to create interactive effects within web browsers</li>
+            <li>Variable - A pointer accessed by name that can contain and be assigned a numerical value</li>
+          </ul>
+        </section>
       </section>
     </main>
 
