@@ -23,6 +23,7 @@
         <section class="notes">
           <!-- <p id="html-note">Press F12 to view the html code for this page</p> -->
           <ul>
+            <li>The code for your HTML is the in .html file</li>
             <li>Basic HTML Format:
               <ol>
                 <li>Document type declaration for browser</li>
@@ -65,12 +66,12 @@
               </ol>
             </li>
             <li>To create an image hyperlink instead use the following, where #1-#4 are as above</br>
-              <<!---->a href="URL" target="#1-#4"></br>
-              &emsp;<<!---->img</br>
-              &emsp;&emsp;src="./assets/img.png" **OR** src="URLhere"</br>
-              &emsp;&emsp;alt="This images description"</br>
-              &emsp;&emsp;title="Will display when hovered over"</br>
-              &emsp;/><<!---->/a></li>
+              &ensp;<<!---->a href="URL" target="#1-#4"></br>
+              &ensp;&emsp;<<!---->img</br>
+              &ensp;&emsp;&emsp;src="./assets/img.png" **OR** src="URLhere"</br>
+              &ensp;&emsp;&emsp;alt="This images description"</br>
+              &ensp;&emsp;&emsp;title="Will display when hovered over"</br>
+              &ensp;&emsp;/><<!---->/a></li>
             <li>To create spacing you can add these character
               <ul>
                 <li>&<!---->nbsp; = |&nbsp;|</li>
@@ -82,10 +83,10 @@
             <li><<!---->ul>List<<!---->/ul> can be used to create an unordered list (bulleted list)</li>
             <li><<!---->li>List item<<!---->/li> is how to insert a list element into an ordered or unordered list</li>
             <li>Lists can be nested inside of each other to create subsections, you should nest a list inside of another list element</br>
-              <<!---->li></br>
-              &emsp;<<!---->ol></br>
-              &emsp;&emsp;<<!---->li>List item<<!---->/li></br>
-              &emsp;<<!---->/ol></br>
+              &ensp;<<!---->li></br>
+              &ensp;&emsp;<<!---->ol></br>
+              &ensp;&emsp;&emsp;<<!---->li>List item<<!---->/li></br>
+              &ensp;&emsp;<<!---->/ol></br>
               <<!---->/li></li>
             <li>You can show html code formats in text form by interrupting it with a comment inline with the code, right after the < or before the > bracket works well to still be as readable as possible</li>
           </ul>
@@ -103,6 +104,7 @@
             <li>Title - Used to create the text that shows when hovering over an element or link and important to search engine optimization</li>
             <li>SEO - Search engine optimization</li>
             <li>Metadata - Different types of data the browser will use to get resources for how to display the page, always found inside the head</li>
+            <li>Script - A JavaScript element used to link functions from JavaScript for your website</li>
           </ul>
         </section>
       </section>
@@ -113,10 +115,12 @@
           <ul>
             <li>You can creat comments in CSS with /* Comments in here */</li>
             <li>Usually using inline styles in HTML is not good, creating a seperate .css style sheet is good practice</li>
-            <li>Creating global values can be done inside of * {} bracket</li>
+            <li>Creating global values can be done inside of bracket with a star</br>
+              &ensp;* {</br>
+              &ensp;}</li>
             <li>To apply styling to multiple elements, classes, ids, or items use commas to separate them before the opening bracket like this,</br>
-              h1, .classname, #idname {</br>
-              }</li>
+              &ensp;h1, .classname, #idname {</br>
+              &ensp;}</li>
             <li>When assigning values to multiple elements as above, assigning a unique element id a value separately will take priority</li>
             <li>The value of auto can be used to center elements easily and cope with many different display sizes</li>
             <li>When setting colors you can use mulitple methods, but check for accessibility and browser compatibility
@@ -196,9 +200,20 @@
         <h2 class="card-headings">JavaScript</h2>
         <section class="notes">
           <ul>
-            <li>Javascript notes</li>
+            <li>Javascript is used to add interactivity and scripts to a webpage</li>
+            <li>You can creat comments in JavaScript with /* Comments in here */</li>
+            <li>The file extension for JavaScript is .js</li>
             <li>When using a string as a value it should be enclosed in quotation marks or single ticks "string" or 'string'</li>
-            <li></li>
+            <li>When making an array enclose the multiple values within square brackets []</li>
+            <li>When something is indexed at 0 that would mean the first item in a list would be number 0 not 1, keep in mind when creating loops and accessing locations</li>
+            <li>To make a function you would use the following code</br>
+              &ensp;function functionName() {</br>
+              &ensp;}</li>
+            <li>functionName(); can be used to call a function you have created in the file</li>
+            <li>You can access all elements in a single row array using the following loop, this example would print every line in the console</br>
+              &ensp;for (var x = 0; x < arrayName.length; x++) {</br>
+              &ensp;&emsp;console.log(arrayName[x]);</br>
+              &ensp;}</li>
           </ul>
         </section>
         <h3 class="vocab">Vocabulary</h3>
@@ -210,9 +225,22 @@
             <li>Boolean - An argument which can be true or false</li>
             <li>Truthy - A value considered true by a funtion that uses boolean context</li>
             <li>Falsy - A value considered false by a funtion that uses boolean context</li>
-            <li>Conditional - Language used to describe functions happening only when specific conditions are or are not met based on the given arguments</li>
+            <li>Conditional - Language used to describe functions happening only when specific conditions are or are not met based on the given arguments
+              <ul>
+                <li>if - This will happen only if statement is truthy, falsy will proceed to next check</li>
+                <li>else if - This will happen only if a preceding if statement is falsy, if statement also falsy continue until final else</li>
+                <li>else - This is a section that will execute if no other if statement is truthy</li>
+                <li>for - A loop used to run a section of code a set number of times</li>
+                <li>while - A loop that will check a statement and execute the code inside while the statement is still true each time around</li>
+                <li>do-while - A version of the while loop that will always run once before reaching the check for true/false</li>
+                <li>switch - This is a conditional statement that can check against a list on conditions</li>
+                <li>case - This is the element that is checked in a switch condition</li>
+                <li>break - A statement used in for and while loops, as well as used in switch-case statements to end the code if you don't want to keep checking any further</li>
+              </ul>
+            </li>
             <li>Array - A grid of individual values, indexed at 0, where each grid point can hold a different value and possibly value type as well. Often one dimensional</li>
             <li>Loop - The process of returning back to a previous point in the code and repeating it usually only while, or until, certain conditions are met</li>
+            <li>Function - A section of code that must be called to be exectued</li>
           </ul>
         </section>
       </section>
