@@ -2,13 +2,6 @@
 
 ## Description
 
-Each section may also have notes on what may be contained in the section
-
--Motivation?
--Why build this?
--What did it solve?
--What did you learn?
-
 This project is an independent assignment to allow familiarization with multiple aspects of coding and workflow before starting the coding bootcamp it is for.
 This was made to allow easy access to notes on the 4 subjects which are covered in the prework for bootcamp. These are HTML, CSS, Git & GitHub, and JavaScript
 In taking time to build this site in the way it is, hopefully it will stay easy to update and relevant while learning coding or needing to remember important information at times.
@@ -17,13 +10,12 @@ I've learned how the different aspects of HTML can be effected by CSS and how Ja
 
 ## Table of Contents (Optional)
 
-If longer README is made in the future this may be necessary, this is an example as this is a study guide, repository and all
+If longer README is made in the future this may be necessary, this is an example as this is a study guide
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
-- [Note](#note)
 
 ## Installation
 
@@ -37,19 +29,15 @@ This project is not a download itself you need, it can be viewed in a browser. I
 
 ## Usage
 
-Where to provide instructions and examples for use. Good place for screenshots
-To use this study guide you can review all of the notes, as well as look at some of the background by hitting F12 to see the HTML and console. In the console tab you will see a list of all the subjects we went over and a suggestion on what to study first.
+To use this study guide you can review all of the notes, as well as look at some of the background by hitting F12 or CTRL + SHIFT + I to see the HTML and console. In the console tab you will see a list of all the subjects we went over and a suggestion on what to study first.
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-If you followed tutorials, include links to those here as well.
-
-Modules created by Northwestern University in Chicago, IL for all the knowledge used to build this project
-Daniel Blair (Myself) for all of the coding
+N/A
 
 ## License
+
+Refer to license in the repo or here.
 
 MIT License
 
@@ -72,25 +60,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-## Note
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
