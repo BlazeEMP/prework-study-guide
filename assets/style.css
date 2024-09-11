@@ -23,13 +23,13 @@ img {
     margin-right: auto;
 } 
 
-ul, ol, #html-note {
+ul, ol/*, #html-note */ {
     font-size: 20px;
 }
 
-#html-note {
-    margin-bottom: 10px; /* adds space after the background on the sections heading so the text isn't touching it */
-}
+/* #html-note {
+    margin-bottom: 10px; /* adds space after the background on the sections heading so the text isn't touching it * /
+} */
 
 ul, ol {
     padding-left: 40px;

@@ -15,12 +15,13 @@
         src="./assets/bowtie-cat.png"
         alt="Profile image of cat wearing a bow tie."
       />
+      <h2>✨ Open the Console to See What's Happening (F12 **OR** CTRL + SHIFT + I)✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
         <h2 class="card-headings">HTML</h2>
         <section class="notes">
-          <p id="html-note">Press F12 to view the html code for this page</p>
+          <!-- <p id="html-note">Press F12 to view the html code for this page</p> -->
           <ul>
             <li>Basic HTML Format:
               <ol>
@@ -30,7 +31,7 @@
                     <li>Head = Page data not rendered for user
                       <ul>
                         <li>Metadata</li>
-                        <li>Links to external resources and scripts</li>
+                        <li>Links to external resources and scripts which may slow down loading of a page</li>
                         <li>Title for webpage, important for accessibility and search engine optimization</li>
                       </ul>
                     </li>
@@ -39,6 +40,7 @@
                         <li>Header</li>
                         <li>Main</li>
                         <li>Footer</li>
+                        <li>Scripts can go here to reduce loading time, after footer but before body closing tag</li>
                       </ol>
                     </li>
                   </ol>
@@ -195,13 +197,22 @@
         <section class="notes">
           <ul>
             <li>Javascript notes</li>
+            <li>When using a string as a value it should be enclosed in quotation marks or single ticks "string" or 'string'</li>
+            <li></li>
           </ul>
         </section>
         <h3 class="vocab">Vocabulary</h3>
         <section class="vocab-notes">
           <ul>
-            <li>JevaScript - An object-oriented programming language used to create interactive effects within web browsers</li>
-            <li>Variable - A pointer accessed by name that can contain and be assigned a numerical value</li>
+            <li>JavaScript - An object-oriented programming language used to create interactive effects within web browsers</li>
+            <li>Variable - A pointer accessed by name that can contain and be assigned a numerical or string value</li>
+            <li>String - A word or text value in a variable</li>
+            <li>Boolean - An argument which can be true or false</li>
+            <li>Truthy - A value considered true by a funtion that uses boolean context</li>
+            <li>Falsy - A value considered false by a funtion that uses boolean context</li>
+            <li>Conditional - Language used to describe functions happening only when specific conditions are or are not met based on the given arguments</li>
+            <li>Array - A grid of individual values, indexed at 0, where each grid point can hold a different value and possibly value type as well. Often one dimensional</li>
+            <li>Loop - The process of returning back to a previous point in the code and repeating it usually only while, or until, certain conditions are met</li>
           </ul>
         </section>
       </section>
@@ -210,5 +221,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
